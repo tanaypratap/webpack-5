@@ -1,9 +1,9 @@
 import "./App.css";
 
-const App = ({ name, age }) => {
+const App = ({ name }) => {
     return `
     <h2> Welcome, ${name} </h2>
-    <p> At ${age}, you're quite fast! </p>
+    <p> Build apps with plain JS but with modern tooling  </p>
     `
 }
 
