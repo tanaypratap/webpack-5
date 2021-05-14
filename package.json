@@ -4,6 +4,7 @@
   "description": "Get vanillaJS apps written with modern tools",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tanay Pratap",
