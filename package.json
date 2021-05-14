@@ -20,6 +20,7 @@
 		"@babel/preset-env": "^7.14.2",
 		"babel-loader": "^8.2.2",
 		"css-loader": "^5.2.4",
+		"lodash": "^4.17.21",
 		"style-loader": "^2.0.0",
 		"webpack": "^5.37.0",
 		"webpack-cli": "^4.7.0"
