@@ -5,8 +5,8 @@ const webpackConfig = {
 	entry: path.resolve(__dirname, "src", "index.js"),
 
 	output: {
-		filename: "[name].bundle.js",
-		path: path.resolve(__dirname, "dist"),
+		filename: "[name].[contenthash].bundle.js",
+		path: path.resolve(__dirname, "dist")
 	},
 	module: {
 		rules: [
@@ -36,10 +36,10 @@ const webpackConfig = {
 			chunks: "async",
 			cacheGroups: {
 				node_vendors: {
-					name:"vendor",
+					name: "vendor",
 					test: /[\\/]node_modules[\\/]/,
 					chunks: "all",
-					priority: 1,
+					priority: 1
 				}
 			}
 		}
