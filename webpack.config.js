@@ -1,11 +1,12 @@
 const path = require("path");
+const { allowedNodeEnvironmentFlags } = require("process");
 
 const webpackConfig = {
 	entry: path.resolve(__dirname, "src", "index.js"),
 
 	output: {
-		filename: "main.js",
-		path: path.resolve(__dirname, "dist")
+		filename: "[name].bundle.js",
+		path: path.resolve(__dirname, "dist"),
 	},
 	module: {
 		rules: [
@@ -28,6 +29,20 @@ const webpackConfig = {
 				type: "asset"
 			}
 		]
+	},
+
+	optimization: {
+		splitChunks: {
+			chunks: "async",
+			cacheGroups: {
+				node_vendors: {
+					name:"vendor",
+					test: /[\\/]node_modules[\\/]/,
+					chunks: "all",
+					priority: 1,
+				}
+			}
+		}
 	},
 
 	mode: "production"
