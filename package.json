@@ -1,0 +1,11 @@
+{
+  "name": "pure-js-app-starter",
+  "version": "1.0.0",
+  "description": "Get vanillaJS apps written with modern tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanay Pratap",
+  "license": "MIT"
+}
