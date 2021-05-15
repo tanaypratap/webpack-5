@@ -7,7 +7,7 @@ const webpackConfig = {
 		filename: "main.js",
 		path: path.resolve(__dirname, "dist")
 	},
-
+    //added babel to webpack know have .concat instead of arrow func in main.js
     module:{
         rules: [
             {
