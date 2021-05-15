@@ -32,8 +32,8 @@ const webpackConfig = {
 	},
 
 	optimization: {
+		runtimeChunk: "single",
 		splitChunks: {
-			chunks: "async",
 			cacheGroups: {
 				node_vendors: {
 					name: "vendor",
