@@ -10,6 +10,9 @@ const webpackConfig = {
 		clean: true
 	},
 	devtool: "inline-source-map",
+	devServer: {
+		contentBase: "./dist"
+	},
 	module: {
 		rules: [
 			{
