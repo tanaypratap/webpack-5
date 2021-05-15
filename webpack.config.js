@@ -7,7 +7,7 @@ const webpackConfig = {
 	output: {
 		filename: "[name].[contenthash].bundle.js",
 		path: path.resolve(__dirname, "dist"),
-		clean: true,
+		clean: true
 	},
 	module: {
 		rules: [
@@ -51,6 +51,8 @@ const webpackConfig = {
 			}
 		}
 	},
+
+	devtool: "inline-source-map",
 
 	mode: "production"
 };
