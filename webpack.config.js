@@ -19,7 +19,12 @@ const webpackConfig = {
                     presets: ["@babel/preset-env"]
                 }
             }
-        }
+        },
+        //telling webpack to test css as of now it don't know css
+            {
+                test: /\.css$/i,
+                use:["style-loader", "css-loader"]
+            }
         ]
     },
     mode: "production",
