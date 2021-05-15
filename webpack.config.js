@@ -5,7 +5,7 @@ const webpackConfig = {
 	entry: path.resolve(__dirname, "src", "index.js"),
 
 	output: {
-		filename: "[name].bundle.js",
+		filename: "[name].[contenthash].bundle.js", //<--- added contenthash
 		path: path.resolve(__dirname, "dist"),
 		clean: true
 	},
@@ -52,6 +52,7 @@ const webpackConfig = {
             }
         }
     },
+    devtool: "inline-source-map",
 
 	mode: "production"
 };
