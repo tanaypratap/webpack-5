@@ -28,7 +28,7 @@ const webpackConfig = {
             //adding svg to webpack 
             {
                 test:/\.(png|svg|jpg|jpeg|gif)$/i,
-                type: "asset/resource"
+                type: "asset" 
             }
         ]
     },
