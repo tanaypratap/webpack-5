@@ -1,5 +1,5 @@
 const path = require("path");
-const { allowedNodeEnvironmentFlags } = require("process");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const webpackConfig = {
 	entry: path.resolve(__dirname, "src", "index.js"),
@@ -30,6 +30,13 @@ const webpackConfig = {
 			}
 		]
 	},
+
+	plugins: [
+		new HtmlWebpackPlugin({
+			title: "vanillaJS app",
+			template: path.resolve(__dirname, "src", "index.html")
+		})
+	],
 
 	optimization: {
 		runtimeChunk: "single",
