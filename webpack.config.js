@@ -44,7 +44,6 @@ const webpackConfig = {
 	],
 
 	optimization: {
-		runtimeChunk: "single",
 		splitChunks: {
 			cacheGroups: {
 				node_vendors: {
