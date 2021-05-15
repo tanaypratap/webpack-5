@@ -1,4 +1,4 @@
-// import App from "./App";
+import App from "./App";
 
 const root = document.getElementById("root");
 

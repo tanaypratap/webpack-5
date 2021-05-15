@@ -4,4 +4,4 @@ const App = ({ name }) => {
     `;
 };
 
-// export default App;
+export default App;
