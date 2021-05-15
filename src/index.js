@@ -33,9 +33,9 @@ function showAboutPage(event) {
 	const loader = showLoader(root);
 
     // THIS IS THE MAIN CODE FOR LAZY LOADING
-	import("./App").then(({ default: App }) => {
+	import(/* webpackPrefetch: true */ "./App").then(({ default: App }) => {
 		hideLoader(root, loader);
-		route.innerHTML = App({ name })
+		route.innerHTML = App({ name });
 	});
 }
 
